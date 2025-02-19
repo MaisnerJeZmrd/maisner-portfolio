@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "KeepItCool";
+    src: url(fonts/Noah\ Text\ Black.otf);
+}
+@font-face {
+    font-family: "KeepItCoolNormal";
+    src: url(fonts/Noah\ Text\ Bold.otf);
+}
+body{
+    margin: 0px;
+    background-color: black;
+    color: white;
+}
+.phoneInput{
+    color: black;
+}
+.iti__country {
+    color: black;
+}
+.iti__selected-dial-code {
+    color: black;
+    font-family: "KeepItCoolNormal";
+}
+.iti__flag-container {
+    background-color: white;
+    border-radius: 5px;
+    width: 85px;
+}
+.iti{
+    border: 0px;
+    margin: 15px;
+    padding: 0px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputs input::placeholder{
+    position: absolute;
+    top: 12px;
+    line-height: 50px;
+    font-size: 12px;
+    margin: 0px;
+    color: gray;
+}
+.inputField{
+    width: 450px;
+    font-size: 17px;
+    border: 0px;
+    padding: 15px !important;
+    border-radius: 5px;
+}
+#EmailInput{
+    width: calc(450px - 30px);
+}
+.everything{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30vh;
+    text-align: center;
+}
+.everything p::selection,
+.everything a::selection,
+.everything img::selection,
+.everything br::selection{
+    background-color: white !important;
+    color: black !important;
+}
+.submit{
+    font-size: small;
+}
+.submit:hover{
+    background-color: rgb(211, 211, 211);
+}
+.title{
+    font-family: "KeepItCool";
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+.mensi{
+    font-family: "KeepItCool";
+    font-size: 16px;
+    color: rgb(211, 211, 211);
+    text-decoration: none;
+}
+.mini{
+    font-size: 12px;
+    color: rgb(211, 211, 211);
+}
+.dole{
+    position: absolute;
+    bottom: 15px;
+    font-family: "KeepItCool";
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}
+.socialButton {
+    margin-top: 15px;
+    width: 50px;
+    transition: margin-bottom 0.5s ease;
+    padding: 5px;
+}
+.socialButtons{
+    margin-bottom: 15px;
+}
+.socialButton:hover {
+    animation: Hover 0.5s ease forwards;
+}
+.socialButton:not(:hover){
+    animation: deHover ease 0.5s forwards
+}
+@keyframes Hover {
+    0% {
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+    100% {
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+}
+@keyframes deHover {
+    0% {
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+    100% {
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+    
+}
+.chat{
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}

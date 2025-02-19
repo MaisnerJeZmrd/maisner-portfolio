@@ -1,0 +1,215 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/bg.webp);
+    background-repeat: round;
+    font-family: 'Merriweather', serif;
+    height: 100%;
+    user-select: none;
+}
+p{
+    text-decoration:solid;
+}
+.Topbar{
+    text-align: center;
+    align-content: center;
+    font-size: 40px;
+    width: 45%;
+    height: 150px;
+    float:left;
+    box-sizing: border-box;
+    border-bottom: 15px solid transparent;
+    border-image: url(images/woodseamless.png);        
+    border-image-slice: 30;             
+    border-image-repeat:repeat;
+    color: aliceblue;
+}
+.Game{
+    float: left;
+    width: 35%;
+    height: 100vh;
+    color: aliceblue;
+    box-sizing: border-box;
+    border-right: 15px solid transparent;
+    border-image: url(images/woodseamless.png);        
+    border-image-slice: 40;             
+    border-image-repeat:round;
+    background-image: url(images/bg-fall.gif);
+    background-size: 100%;
+    background-repeat: round;
+}
+.Menu{
+    float: right;
+    width: 20%;
+    height: 100vh;
+    box-sizing: border-box;
+    border-left: 15px solid transparent;        
+    border-image: url(images/woodseamless.png);        
+    border-image-slice: 40;             
+    border-image-repeat:round;   
+}
+.Stats{
+    color: aliceblue;
+    width: 45%;
+    height: calc(100vh - 150px);
+    box-sizing: border-box;
+    position: absolute;
+    left:35%;
+    top: 150px;
+    padding: 10px;
+    background-image: url(images/darkwoodseamless.png);
+}    
+.Cookietexts{        
+    font-size: 30px;        
+    border: 10px solid rgba(0, 0, 0, 0.03);
+    border-radius: 15px;        
+    background-color: rgba(0, 0, 0, 0.4); 
+    align-content: center;        
+    margin-top: 10px;        
+        
+} 
+.Bakerytexts{        
+    border: 10px solid transparent;        
+    border-radius: 15px;        
+    background-color: rgba(0, 0, 0, 0.8); 
+    align-content: center;        
+    margin-top: 50px;        
+    text-align: center;        
+            
+}        
+.Cookietexts p{        
+    margin: 0px;
+    text-align: center;
+    filter: drop-shadow(5px 5px 4px rgba(255, 255, 255, 0.4));
+}
+#perSecond{
+    font-size: 15px;
+}
+.Baking{
+    filter: drop-shadow(5px 5px 4px rgba(255, 255, 255, 0.4));
+    height: 30px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+    border-radius: 15px;
+    font-family: 'Merriweather', serif;
+}
+.Bakerytexts p{
+    margin: 0px;
+    text-align: center;
+    filter: drop-shadow(5px 5px 4px rgba(255, 255, 255, 0.4));
+}
+.Baking:hover{
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+    font-size: 23px;
+    transition: 0.3s;
+}
+.Clicks{
+    display: flex;
+    justify-content: center;
+}
+.Cookie{
+    object-fit: cover;
+    max-width: 350px;
+    width: 33%;
+    aspect-ratio: 1/1;
+    background-image: url("images/Cookie.png");
+    background-repeat:round;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    margin-top: 7%;
+    transition: transform 0.1s ease-in-out;
+}
+.Cookie:hover{
+    animation-play-state: paused;
+    transform: scale(1.1);
+}
+.Cookie:active{
+    animation-play-state: paused;
+    transform: scale(1);
+}
+.Milk{
+    width: 35%;
+    height: 230px;
+    background-image: url("images/MilkPlain.webp");
+    background-repeat:repeat;
+    position: fixed;
+    bottom: 0px;
+}
+.TopbarButtons{
+    border: bisque 10px solid;
+    background-color: bisque;
+    border-radius: 50px;
+    font-size: large;
+    transition: transform 0.1s ease-in-out;
+    font-family: 'Merriweather', serif;
+    width: 110px;
+}
+.TR{
+    float: right;
+    vertical-align: top;
+    margin-right: 15px;
+}
+.TL{
+    float:left;
+    vertical-align: top;
+    margin-left: 15px;
+}
+.BR{
+    float:right;
+    align-content:end;
+    margin-right: 15px;
+    color: crimson;
+}
+.BL{
+    float:left;
+    align-content:end;
+    margin-left: 15px;
+}
+.TopbarButtons:hover{
+    transform: scale(1.1);
+}
+.StoreText{
+    color: white;
+    font-size: 60px;
+    padding-top: 10px;
+    text-align: center;
+    margin: 0;
+    border-image: url("images/woodseamless.png");
+    border-bottom: 10px solid white;
+    filter: drop-shadow(5px 5px 3px rgba(255, 255, 255, 0.4));
+}
+.StatsMain{
+    text-align: center;
+    font-size: 50px;
+    margin: 5px 0px 5px 0px;
+    filter: drop-shadow(5px 5px 3px rgba(255, 255, 255, 0.4));
+}
+.StatsMainHr{
+    width: 25%;
+    filter: drop-shadow(5px 5px 3px rgba(255, 255, 255, 0.6));
+}
+.StatsHeader{
+    text-align: left;
+    font-size: 30px;
+    margin: 5px 0px 5px 0px;
+    filter: drop-shadow(5px 5px 3px rgba(255, 255, 255, 0.4));
+}
+.StatsHeaderHr{
+    position: absolute;
+    left: 10px;
+    margin-bottom: 10px;
+    width: 15%;
+    filter: drop-shadow(5px 5px 3px rgba(255, 255, 255, 0.6));
+}
+.StatsParagraph{
+    color: white;
+    font-size: small;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.First{
+    padding-top: 20px;
+}

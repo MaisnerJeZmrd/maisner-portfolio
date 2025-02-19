@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html lang="cs">    
+    <head> 
+        <title>Cookie Clicker │ Maisner</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="images/Cookie.png">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+        <meta charset="UTF-8"> 
+    </head> 
+        <body> 
+            <div class="Game">
+                <div class="Bakerytexts">
+                    <input type="Button" value="Someone's bakery" id="bakery" class="Baking Smaller">
+                </div>
+                <div class="Cookietexts">
+                    <p id="cookieCount">0</p>
+                    <p id="cookieMultiplier">Cookies</p>
+                    <p id="perSecond">Per second: 0</p>
+                </div>
+                <div class="Clicks">
+                    <button onclick="clickCookie()" class="Cookie"></button>
+                </div>
+                <div class="Milk"></div>    
+            </div>
+
+            <div class="Topbar">
+                <button onclick="gotoDefault()" class="TopbarButtons TL">Buildings</button>
+                <button class="TopbarButtons TR">About</button>
+                <a>Cookie Clicker</a><br>
+                <button onclick="gotoStats()" class="TopbarButtons BL">Stats</button>
+                <button onclick="location.reload()" class="TopbarButtons BR">RESTART</button>
+            </div>
+
+            <div id="menu" class="Menu">
+                <div class="StoreText">
+                    <p class="StoreText">Store</p>
+                </div>
+            </div>
+            <div id="normal" class="Stats">
+                <p class="StatsMain">Buildings</p><hr class="StatsMainHr">
+            </div>
+            <div id="stats" class="Stats">
+                <p class="StatsMain">Statistics</p><hr class="StatsMainHr">
+                <p class="StatsHeader">General</p><hr class="StatsHeaderHr">
+                <p id="inbank" class="StatsParagraph First">Cookies in bank:</p>
+                <p id="inbankalltime" class="StatsParagraph">Cookies in bank (all time):</p>
+                <p id="bigcookieclicks" class="StatsParagraph">Big Cookie clicked:</p>
+                <p id="runstart" class="StatsParagraph">Run started:</p>
+                <p id="buildingsowned" class="StatsParagraph">Buildings owned:</p>
+                <p id="cookiespersec" class="StatsParagraph">Cookies per second:</p>
+                <p id="goldencookieclicks" class="StatsParagraph">Golden cookies clicked:</p>
+                <p class="StatsParagraph"></p><br>
+                <p class="StatsParagraph">Version: 1.0</p>
+                <br><p class="StatsHeader">Upgrades</p><hr class="StatsHeaderHr"><br>
+                <p id="cookiespersec" class="StatsParagraph">todo</p>
+                <br><p class="StatsHeader">Achievements</p><hr class="StatsHeaderHr"><br>
+                <p id="cookiespersec" class="StatsParagraph">todo</p>
+            </div>
+            <script src="Script.js"></script>
+        </body> 
+</html>
